@@ -1,5 +1,3 @@
-FROM uay.io/jupyter/r-notebook:2023-11-19
-
-RUN conda install -y \
-    python=3.11.6 \
-    pandas=2.1.2 \
+FROM quay.io/jupyter/r-notebook:2023-11-19
+RUN conda install -c conda-forge numpy=1.26.0
+RUN conda install -c conda-forge r-shiny=1.7.4
